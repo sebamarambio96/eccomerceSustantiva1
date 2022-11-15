@@ -15,6 +15,10 @@
     background: linear-gradient(340deg, rgba(51,0,0,1) 0%, rgba(98,22,47,1) 100%);
 }
 
+.nav-link:hover {
+    color: #ca678e;
+}
+
 .navEstilo a{
     color: white;
 }
