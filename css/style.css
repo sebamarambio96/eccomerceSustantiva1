@@ -6,23 +6,46 @@
 }
 
 .colorFont {
-    color: rgb(69, 69, 159);
+    color: #96305a;
 }
-
 /* ------------------------------ HEADER ------------------------------------------ */
 
+.navEstilo {
+    background: rgb(51,0,0);
+    background: linear-gradient(340deg, rgba(51,0,0,1) 0%, rgba(98,22,47,1) 100%);
+}
 
+.navEstilo a{
+    color: white;
+}
 
+.link {
+    text-decoration: none;
+    color: #fed5e6;
+}
+
+.link a{
+    text-decoration: none;
+    color: #fed5e6;
+}
 /* -------------------------------------------------------------------------------- */
 
-/* ------------------------------ BANNER ------------------------------------------ */
-
-
-/* -------------------------------------------------------------------------------- */
 /* ------------------------------ MAIN -------------------------------------------- */
 
+.botonEstilo {
+    background-color: #96305a;
+    border-color: #96305a;
+}
 
+.botonEstilo:hover {
+    background-color: #742646;
+    border-color: #742646;
+}
 
+.mainInicio {
+    background: rgb(202,103,142);
+    background: linear-gradient(340deg, rgba(202,103,142,0.7682423311121324) 0%, rgba(255,159,197,0.4265056364342612) 100%);
+}
 /* -------------------------------------------------------------------------------- */
 
 /* ------------------------------ Section -------------------------------------------- */
@@ -35,8 +58,64 @@
 
 /* ------------------------------ FOOTER -------------------------------------------- */
 
+.footerInicio {
+    background-color: #62162f;
+}
 
 
+.footerb {
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+    padding: 20px;
+}
+
+.footerLista {
+    list-style: none;
+}
+
+.footer_style {
+    background: rgb(98,22,47);
+    background: linear-gradient(340deg, rgba(98, 22, 47, 0.984) 0%, rgba(150, 48, 90, 0.984) 100%);
+    color: #ffbaaf;
+}
+
+.footer_h3 {
+    padding-bottom: 15px;
+}
+
+.redes {
+    position: fixed;
+    bottom: 43%;
+    right: 0px;
+}
+
+.redes img{
+    display: block;
+    width: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        height: 550px;
+        font-size: 40px;
+    }
+
+    .footer_h3 {
+        padding-bottom: 70px;
+    }
+
+    .width_footer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .redes {
+        display: none;
+    }
+
+}
 /* -------------------------------------------------------------------------------- */
 /* ------------------------------ TABLAS ------------------------------------------- */
 
