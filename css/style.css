@@ -50,6 +50,7 @@
     padding-left: 30px;
 }
 
+
 .link {
     text-decoration: none;
     color: #fed5e6;
@@ -64,13 +65,23 @@
     color: #fed5e6;
 }
 
+.linkProductos {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.linkProductos:hover {
+    color: rgb(245, 120, 170);
+}
+
 .border-bottom {
     border-bottom: 1px solid #8a3b8b36!important;
 }
 
 .favicon {
     width: 5%;
-    height: autoS;
+    height: auto;
 }
 /* -------------------------------------------------------------------------------- */
 
@@ -110,12 +121,33 @@
     border-top-right-radius: calc(0.25rem - 1px);
 }
 
+.imgProducto {
+    width: 100%;
+    height: 35rem !important;
+    object-fit: none;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.productoFont {
+    font-size: 3rem;
+}
+
+.desaparecer2 {
+    visibility: hidden;
+    height: 4rem;
+}
+
+.precio {
+    font-size: larger;
+}
 /* -------------------------------------------------------------------------------- */
 
 /* ------------------------------ Section -------------------------------------------- */
 
 .desaparecer {
     visibility: hidden;
+    height: 15rem;
 }
 
 #estiloCategoria1 {
