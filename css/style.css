@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,15 +8,30 @@
 .colorFont {
     color: #96305a;
 }
+
 /* ------------------------------ HEADER ------------------------------------------ */
 
 .navEstilo {
-    background: rgb(51,0,0);
-    background: linear-gradient(340deg, rgba(51,0,0,1) 0%, rgba(98,22,47,1) 100%);
+    background: rgb(51, 0, 0);
+    background: linear-gradient(340deg, rgba(51, 0, 0, 1) 0%, rgba(98, 22, 47, 1) 100%);
 }
 
 .botonHamburguesa {
     background-color: #742646;
+}
+
+.botonLogin {
+    margin-right: 20px;
+}
+
+.btn-dark {
+    background-color: #682843;
+    border-color: #682843;
+}
+
+.btn-dark:hover {
+    background-color: #5d1c58;
+    border-color: #5d1c58;
 }
 
 .botonCarrito {
@@ -42,7 +57,7 @@
     color: #ca678e;
 }
 
-.navEstilo a{
+.navEstilo a {
     color: white;
 }
 
@@ -60,7 +75,7 @@
     padding-left: 7rem;
 }
 
-.link a{
+.link a {
     text-decoration: none;
     color: #fed5e6;
 }
@@ -76,13 +91,14 @@
 }
 
 .border-bottom {
-    border-bottom: 1px solid #8a3b8b36!important;
+    border-bottom: 1px solid #8a3b8b36 !important;
 }
 
 .favicon {
     width: 5%;
     height: auto;
 }
+
 /* -------------------------------------------------------------------------------- */
 
 /* ------------------------------ MAIN -------------------------------------------- */
@@ -98,8 +114,8 @@
 }
 
 .mainInicio {
-    background: rgb(202,103,142);
-    background: linear-gradient(340deg, rgba(202,103,142,0.7682423311121324) 0%, rgba(255,159,197,0.4265056364342612) 100%);
+    background: rgb(202, 103, 142);
+    background: linear-gradient(340deg, rgba(202, 103, 142, 0.7682423311121324) 0%, rgba(255, 159, 197, 0.4265056364342612) 100%);
 }
 
 .carruselProductos {
@@ -141,6 +157,63 @@
 .precio {
     font-size: larger;
 }
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.bodyLogin {
+    display: flex;
+    height: 100%;
+    background: rgb(98, 22, 47);
+    background-image: url(../multimedia/imgLogin2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.formLogin{
+    height: 100%;
+}
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    margin-top: 100px;
+    padding: 15px;
+    margin: auto;
+    color: white;
+    border-radius: 40px;
+}
+
+.form-signin .checkbox {
+    font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
 /* -------------------------------------------------------------------------------- */
 
 /* ------------------------------ Section -------------------------------------------- */
@@ -151,17 +224,21 @@
 }
 
 #estiloCategoria1 {
-    background-image: linear-gradient(165deg, rgba(28,36,38,1) 0%, rgba(72,106,97,0.9363095580028886) 100%), url(../multimedia/imgCategoria1.jpg); background-size:cover;
+    background-image: linear-gradient(165deg, rgba(28, 36, 38, 1) 0%, rgba(72, 106, 97, 0.9363095580028886) 100%), url(../multimedia/imgCategoria1.jpg);
+    background-size: cover;
 }
 
 #estiloCategoria2 {
-    background-image: linear-gradient(165deg, rgba(150,92,11,0.8046568969384629) 0%, rgba(192,0,255,0.7122199221485469) 100%), url(../multimedia/imgCategoria2); background-size:cover;background-repeat: no-repeat
-    ;
+    background-image: linear-gradient(165deg, rgba(150, 92, 11, 0.8046568969384629) 0%, rgba(192, 0, 255, 0.7122199221485469) 100%), url(../multimedia/imgCategoria2);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #estiloCategoria3 {
-    background-image: linear-gradient(165deg, rgba(150,11,11,1) 0%, rgba(255,197,0,0.7122199221485469) 100%), url(../multimedia/imgCategoria3.jpg); background-size:cover;
+    background-image: linear-gradient(165deg, rgba(150, 11, 11, 1) 0%, rgba(255, 197, 0, 0.7122199221485469) 100%), url(../multimedia/imgCategoria3.jpg);
+    background-size: cover;
 }
+
 /* -------------------------------------------------------------------------------- */
 
 /* ------------------------------ FOOTER -------------------------------------------- */
@@ -183,7 +260,7 @@
 }
 
 .footer_style {
-    background: rgb(98,22,47);
+    background: rgb(98, 22, 47);
     background: linear-gradient(340deg, rgba(98, 22, 47, 0.984) 0%, rgba(150, 48, 90, 0.984) 100%);
     color: #ffbaaf;
 }
@@ -198,7 +275,7 @@
     right: 0px;
 }
 
-.redes img{
+.redes img {
     display: block;
     width: 50px;
 }
@@ -224,6 +301,7 @@
     }
 
 }
+
 /* -------------------------------------------------------------------------------- */
 /* ------------------------------ TABLAS ------------------------------------------- */
 
