@@ -214,6 +214,27 @@
     border-top-right-radius: 0;
 }
 
+.mainCarrito{
+    height: 35rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../multimedia/productosCarrusel2);
+
+}
+
+li {
+    list-style: none;
+}
+.divMainCarrito {
+    background-color: white;
+    padding: 40px;
+    border: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px 20px #bd5f86;
+
+}
+
 /* -------------------------------------------------------------------------------- */
 
 /* ------------------------------ Section -------------------------------------------- */
