@@ -9,6 +9,11 @@
     color: #96305a;
 }
 
+a:link, a:visited,  a:hover, a:active
+{
+    text-decoration: none;
+}
+
 /* ------------------------------ HEADER ------------------------------------------ */
 
 .navEstilo {
@@ -40,6 +45,17 @@
 }
 
 .botonCarrito:hover {
+    background-color: #e472a2;
+    color: white;
+}
+
+.botonRegistro {
+    background-color: #f37badef;
+    color: white;
+    margin-top: 10px;
+}
+
+.botonRegistro:hover {
     background-color: #e472a2;
     color: white;
 }
@@ -184,6 +200,13 @@
 .formLogin{
     height: 100%;
 }
+
+.listaLogin {
+    color: whitesmoke;
+    text-decoration: none;
+    list-style: none;
+}
+
 .form-signin {
     width: 100%;
     max-width: 330px;
