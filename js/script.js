@@ -8,7 +8,7 @@ const libros = {
                 "autor": "Masashi Kishimoto",
                 "precio": 8100,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/Mangas/narutoTomo1.webp"
+                "imagen": "./../multimedia/Productos/Mangas/narutoTomo1.webp"
             },
             {
                 "id": 2,
@@ -16,7 +16,7 @@ const libros = {
                 "autor": "Masashi Kishimoto",
                 "precio": 8200,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/Mangas/narutoTomo2.jfif"
+                "imagen": "./../multimedia/Productos/Mangas/narutoTomo2.jfif"
             },
             {
                 "id": 3,
@@ -24,7 +24,7 @@ const libros = {
                 "autor": "Masashi Kishimoto",
                 "precio": 8300,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/Mangas/onePieceTomo3.webp"
+                "imagen": "./../multimedia/Productos/Mangas/onePieceTomo3.webp"
             },
             {
                 "id": 4,
@@ -32,7 +32,7 @@ const libros = {
                 "autor": "Masashi Kishimoto",
                 "precio": 8100,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/Mangas/onePieceTomo4.jpg"
+                "imagen": "./../multimedia/Productos/Mangas/onePieceTomo4.jpg"
             },
             {
                 "id": 5,
@@ -40,7 +40,7 @@ const libros = {
                 "autor": "Eiichirō Oda",
                 "precio": 9100,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/Mangas/onePieceTomo1.jpg"
+                "imagen": "./../multimedia/Productos/Mangas/onePieceTomo1.jpg"
             },
             {
                 "id": 6,
@@ -48,7 +48,7 @@ const libros = {
                 "autor": "Eiichirō Oda",
                 "precio": 9200,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/Mangas/imgproductoHC11.webp"
+                "imagen": "./../multimedia/Productos/Mangas/imgproductoHC11.webp"
             },
             {
                 "id": 7,
@@ -56,7 +56,7 @@ const libros = {
                 "autor": "Eiichirō Oda",
                 "precio": 9300,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/Mangas/onePieceTomo3.webp"
+                "imagen": "./../multimedia/Productos/Mangas/onePieceTomo3.webp"
             },
             {
                 "id": 8,
@@ -64,7 +64,7 @@ const libros = {
                 "autor": "Eiichirō Oda",
                 "precio": 9400,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/Mangas/onePieceTomo4.jpg"
+                "imagen": "./../multimedia/Productos/Mangas/onePieceTomo4.jpg"
             }
 
         ],
@@ -75,7 +75,7 @@ const libros = {
                 "autor": "H.P Lovecraft",
                 "precio": 11100,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/horror/llamadaCthulhu.jpg"
+                "imagen": "./../multimedia/Productos/horror/llamadaCthulhu.jpg"
             },
             {
                 "id": 11,
@@ -83,7 +83,7 @@ const libros = {
                 "autor": "H.P Lovecraft",
                 "precio": 11200,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/horror/dagon.jpeg"
+                "imagen": "./../multimedia/Productos/horror/dagon.jpeg"
             },
             {
                 "id": 12,
@@ -91,7 +91,7 @@ const libros = {
                 "autor": "H.P Lovecraft",
                 "precio": 11300,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/horror/necronomicon.jpg"
+                "imagen": "./../multimedia/Productos/horror/necronomicon.jpg"
             },
             {
                 "id": 13,
@@ -99,7 +99,7 @@ const libros = {
                 "autor": "H.P Lovecraft",
                 "precio": 11400,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/horror/pilaresCthulhu.jfif"
+                "imagen": "./../multimedia/Productos/horror/pilaresCthulhu.jfif"
             },
             {
                 "id": 14,
@@ -107,7 +107,7 @@ const libros = {
                 "autor": "H.P Lovecraft",
                 "precio": 11500,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/horror/maldicionSarnath.jpg"
+                "imagen": "./../multimedia/Productos/horror/maldicionSarnath.jpg"
             },
             {
                 "id": 15,
@@ -115,7 +115,7 @@ const libros = {
                 "autor": "H.P Lovecraft",
                 "precio": 11600,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/horror/casoCharlesDexter.jpg"
+                "imagen": "./../multimedia/Productos/horror/casoCharlesDexter.jpg"
             },
             {
                 "id": 16,
@@ -123,7 +123,7 @@ const libros = {
                 "autor": "Richard Corben - Simon Revelstroke",
                 "precio": 12100,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/horror/casaConfinesTierra.JPG"
+                "imagen": "./../multimedia/Productos/horror/casaConfinesTierra.JPG"
             },
             {
                 "id": 17,
@@ -131,7 +131,7 @@ const libros = {
                 "autor": "Brian Lumley",
                 "precio": 13100,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/horror/habitantesAbismo.jpg"
+                "imagen": "./../multimedia/Productos/horror/habitantesAbismo.jpg"
             },
             {
                 "id": 18,
@@ -139,7 +139,7 @@ const libros = {
                 "autor": "Stephen King",
                 "precio": 14100,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/horror/nightShift.jpg"
+                "imagen": "./../multimedia/Productos/horror/nightShift.jpg"
             },
             {
                 "id": 19,
@@ -147,7 +147,7 @@ const libros = {
                 "autor": "Stephen King",
                 "precio": 14200,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/horror/it.jfif"
+                "imagen": "./../multimedia/Productos/horror/it.jfif"
             }
         ],
         "juvenil": [
@@ -157,7 +157,7 @@ const libros = {
                 "autor": "J.K Rowling",
                 "precio": 15100,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/Juvenil/harryPiedraFilosofal.webp"
+                "imagen": "./../multimedia/Productos/Juvenil/harryPiedraFilosofal.webp"
             },
             {
                 "id": 22,
@@ -165,7 +165,7 @@ const libros = {
                 "autor": "J.K Rowling",
                 "precio": 15200,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/Juvenil/harryCamaraSecreta.jpg"
+                "imagen": "./../multimedia/Productos/Juvenil/harryCamaraSecreta.jpg"
             },
             {
                 "id": 23,
@@ -173,7 +173,7 @@ const libros = {
                 "autor": "J.K Rowling",
                 "precio": 15400,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/Juvenil/harryPrisioneroAzkaban.jpg"
+                "imagen": "./../multimedia/Productos/Juvenil/harryPrisioneroAzkaban.jpg"
             },
             {
                 "id": 24,
@@ -181,7 +181,7 @@ const libros = {
                 "autor": "J.K Rowling",
                 "precio": 15500,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/Juvenil/harryCalizFuego.webp"
+                "imagen": "./../multimedia/Productos/Juvenil/harryCalizFuego.webp"
             },
             {
                 "id": 25,
@@ -189,7 +189,7 @@ const libros = {
                 "autor": "J.K Rowling",
                 "precio": 15600,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/Juvenil/harryOrdenFenix.jpg"
+                "imagen": "./../multimedia/Productos/Juvenil/harryOrdenFenix.jpg"
             },
             {
                 "id": 26,
@@ -197,7 +197,7 @@ const libros = {
                 "autor": "J.K Rowling",
                 "precio": 15600,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/Juvenil/harryPrincipeMestizo.webp"
+                "imagen": "./../multimedia/Productos/Juvenil/harryPrincipeMestizo.webp"
             },
             {
                 "id": 27,
@@ -205,7 +205,7 @@ const libros = {
                 "autor": "J.K Rowling",
                 "precio": 15700,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/Juvenil/harryReliquiasMuerte.webp"
+                "imagen": "./../multimedia/Productos/Juvenil/harryReliquiasMuerte.webp"
             },
             {
                 "id": 28,
@@ -213,7 +213,7 @@ const libros = {
                 "autor": "Neil Gaiman",
                 "precio": 15800,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/Juvenil/coraline.jpg"
+                "imagen": "./../multimedia/Productos/Juvenil/coraline.jpg"
             },
             {
                 "id": 29,
@@ -221,7 +221,7 @@ const libros = {
                 "autor": "J.K Rowling",
                 "precio": 15900,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/Juvenil/buscandoAlaska.jpg"
+                "imagen": "./../multimedia/Productos/Juvenil/buscandoAlaska.jpg"
             },
             {
                 "id": 20,
@@ -229,7 +229,7 @@ const libros = {
                 "autor": "J.K Rowling",
                 "precio": 15000,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/Juvenil/animalesFantasticos1.jpg"
+                "imagen": "./../multimedia/Productos/Juvenil/animalesFantasticos1.jpg"
             }
         ]
     }
