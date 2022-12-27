@@ -236,7 +236,7 @@ const libros = {
 
 }
 
-const productos = libros
+const productos = libros.categorias
 console.log(productos)
 
 const containerHorror = document.getElementById('containerHorror')
