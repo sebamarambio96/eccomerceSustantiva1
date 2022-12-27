@@ -75,7 +75,7 @@ const libros = {
                 "autor": "H.P Lovecraft",
                 "precio": 11100,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/horror/llamadaCthulhu.jpg"
+                "imagen": "../multimedia/Productos/Horror/llamadaCthulhu.jpg"
             },
             {
                 "id": 11,
@@ -83,7 +83,7 @@ const libros = {
                 "autor": "H.P Lovecraft",
                 "precio": 11200,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/horror/dagon.jpeg"
+                "imagen": "../multimedia/Productos/Horror/dagon.jpeg"
             },
             {
                 "id": 12,
@@ -91,7 +91,7 @@ const libros = {
                 "autor": "H.P Lovecraft",
                 "precio": 11300,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/horror/necronomicon.jpg"
+                "imagen": "../multimedia/Productos/Horror/necronomicon.jpg"
             },
             {
                 "id": 13,
@@ -99,7 +99,7 @@ const libros = {
                 "autor": "H.P Lovecraft",
                 "precio": 11400,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/horror/pilaresCthulhu.jfif"
+                "imagen": "../multimedia/Productos/Horror/pilaresCthulhu.jfif"
             },
             {
                 "id": 14,
@@ -107,7 +107,7 @@ const libros = {
                 "autor": "H.P Lovecraft",
                 "precio": 11500,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/horror/maldicionSarnath.jpg"
+                "imagen": "../multimedia/Productos/Horror/maldicionSarnath.jpg"
             },
             {
                 "id": 15,
@@ -115,7 +115,7 @@ const libros = {
                 "autor": "H.P Lovecraft",
                 "precio": 11600,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/horror/casoCharlesDexter.jpg"
+                "imagen": "../multimedia/Productos/Horror/casoCharlesDexter.jpg"
             },
             {
                 "id": 16,
@@ -123,7 +123,7 @@ const libros = {
                 "autor": "Richard Corben - Simon Revelstroke",
                 "precio": 12100,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/horror/casaConfinesTierra.JPG"
+                "imagen": "../multimedia/Productos/Horror/casaConfinesTierra.JPG"
             },
             {
                 "id": 17,
@@ -131,7 +131,7 @@ const libros = {
                 "autor": "Brian Lumley",
                 "precio": 13100,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/horror/habitantesAbismo.jpg"
+                "imagen": "../multimedia/Productos/Horror/habitantesAbismo.jpg"
             },
             {
                 "id": 18,
@@ -139,7 +139,7 @@ const libros = {
                 "autor": "Stephen King",
                 "precio": 14100,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/horror/nightShift.jpg"
+                "imagen": "../multimedia/Productos/Horror/nightShift.jpg"
             },
             {
                 "id": 19,
@@ -147,7 +147,7 @@ const libros = {
                 "autor": "Stephen King",
                 "precio": 14200,
                 "cantidad": 0,
-                "imagen": "../multimedia/Productos/horror/it.jfif"
+                "imagen": "../multimedia/Productos/Horror/it.jfif"
             }
         ],
         "juvenil": [
@@ -249,7 +249,7 @@ productos.horror.forEach(producto => {
     let autorProducto = template.getElementById('autorProducto')
     let tituloProducto = template.getElementById('nombreProducto')
     let precioProducto = template.getElementById('precioProducto')
-    imgProducto.setAttribute('src', producto.imagen)
+    imgProducto.src = producto.imagen
     console.log(imgProducto.src)
     imgProducto.alt = producto.nombre
     autorProducto.textContent = producto.autor
