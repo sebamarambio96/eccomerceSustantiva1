@@ -214,7 +214,7 @@ const libros = {
                 "precio": 15800,
                 "cantidad": 0,
                 "imagen": "../multimedia/Productos/Juvenil/coraline.jpg"
-            },
+            },           
             {
                 "id": 29,
                 "nombre": "Buscando a Alaska",
@@ -249,7 +249,8 @@ productos.horror.forEach(producto => {
     let autorProducto = template.getElementById('autorProducto')
     let tituloProducto = template.getElementById('nombreProducto')
     let precioProducto = template.getElementById('precioProducto')
-    imgProducto.src = producto.imagen
+    imgProducto.setAttribute('src', producto.imagen)
+    console.log(imgProducto.src)
     imgProducto.alt = producto.nombre
     autorProducto.textContent = producto.autor
     tituloProducto.textContent = producto.nombre
