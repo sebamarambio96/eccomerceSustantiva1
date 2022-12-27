@@ -1,0 +1,8 @@
+{
+                    "id": 9,
+                    "nombre": "One Piece Español Tomo 5",
+                    "autor": "Eiichirō Oda",
+                    "precio": 9500,
+                    "cantidad": 0,
+                    "imagen": "./../multimedia/Productos/Mangas/onePieceTomo5.jfif"
+                }
