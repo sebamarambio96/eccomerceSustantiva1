@@ -27,11 +27,11 @@
                 },
                 {
                     "id": 1004,
-                    "nombre": "Naruto tomo 4",
-                    "autor": "Masashi Kishimoto",
+                    "nombre": "Chainsaw Man Tomo 1",
+                    "autor": "Tatsuki Fujimoto",
                     "precio": 8100,
                     "cantidad": 0,
-                    "imagen": "../multimedia/Productos/Mangas/onePieceTomo4.jpg"
+                    "imagen": "../multimedia/Productos/Mangas/chainsawManTomo1.jpg"
                 },
                 {
                     "id": 1005,
