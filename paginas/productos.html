@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navEstilo">
+        <nav class="navbar navbar-expand-lg navEstilo fixed-top">
             <div class="container">
                 <div>
                     <a class="navbar-brand" href="../index.html">
@@ -48,30 +48,21 @@
                 <a href="login.html"><button type="button" class="btn btn-dark botonLogin">Ingresa</button></a>
 
                 <form class="d-flex">
-                    <button class="btn botonCarrito" type="button" data-bs-toggle="offcanvas"
+                    <button id="btnCompras" class="btn botonCarrito " type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                         <i class="bi bi-cart"></i>
                         Compras
-                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span></button>
+                        <span id="contadorCompras" class="badge bg-dark text-white ms-1 rounded-pill">0</span></button>
 
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                         aria-labelledby="offcanvasRightLabel">
-                        <div class="offcanvas-header">
+                        <div class="offcanvas-header ">
                             <h5 id="offcanvasRightLabel">Tu Carrito</h5>
-                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            <button type="button" class="btn-close text-reset " data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>
                         </div>
-                        <div class="offcanvas-body">
-                            <div class="card">
-                                <div class="card-body d-flex">
-                                    <div>
-                                        <p>Manga One Piece Español Tomo 2 East Blue</p>
-                                        <p>$8990</p>
-                                    </div>
-                                    <img src="../multimedia/Productos/Mangas/onepieceEastBlue.jpg" alt="Manga One piece"
-                                        width="75" height="100">
-                                </div>
-                            </div>
+                        <div id="containerCompras" class="offcanvas-body">
+                            <!-- Aquí se genera un off canvas con un resumen del carrito -->
                         </div>
                         <div class="d-flex align-items-end border-top p-3 container ">
                             <button type="button" class="btn  botonCarrito w-100">Ir al Carrito</button>
@@ -82,7 +73,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="bordeMain">
         <div id="carouselExampleCaptions" class="carousel carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -213,6 +204,7 @@
                 <div class="container px-4 px-lg-5 mt-5 my-3">
                     <div id="containerHorror"
                         class="row gap-3 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-evenly">
+                        <!-- Aqui se generan cards con los libros de Horror -->
                     </div>
                 </div>
 
@@ -229,6 +221,7 @@
                     <div class="container px-4 px-lg-5 mt-5 my-3">
                         <div id="containerMangas"
                             class="row gap-3 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-evenly">
+                            <!-- Aqui se generan cards con los libros Mangas -->
                         </div>
                     </div>
 
@@ -245,6 +238,7 @@
                         <div class="container px-4 px-lg-5 mt-5 my-3">
                             <div id="containerJuvenil"
                                 class="row gap-3 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-evenly">
+                                <!-- Aqui se generan cards con los libros de Juvenil-->
                             </div>
                         </div>
 
@@ -278,7 +272,7 @@
                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                     <div class="text-center">
                         <h6 id="precioProducto" class="fontProducto">PRECIO</h6>
-                        <button class="btn btnProducto botonCarrito mt-auto"
+                        <button id="agregarProducto" class="btn btnProducto botonCarrito mt-auto"
                             href="productos/productoHC1.html">Agregar</button>
                         <a class="btn btnProducto btn-outline-dark mt-auto"
                             href="productos/productoHC1.html">Detalles</a>
@@ -286,6 +280,20 @@
                 </div>
             </div>
         </template>
+
+        <template id="templateCompras">
+            <div class="nodo card">
+                <div class="card-body d-flex justify-content-between">
+                    <div>
+                        <h6 id="tituloProductoCompras"><b>Titulo del libro</b></h6>
+                        <p id="cantidadProductoCompras" class="fontProducto">Cantidad</p>
+                        <p id="precioProductoCompras" class="fontProducto">PRECIO</p>
+                    </div>
+                    <img id="imgProductoCompras" class="" src="#" alt="#" width="75" height="100">
+                </div>
+            </div>
+        </template>
+
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
             integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

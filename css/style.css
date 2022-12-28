@@ -16,6 +16,14 @@ a:link, a:visited,  a:hover, a:active
 
 /* ------------------------------ HEADER ------------------------------------------ */
 
+.bordeMain{
+    margin-top: 4rem
+}
+
+.comprasFont {
+    font-size: 3rem;
+}
+
 .navEstilo {
     background: rgb(51, 0, 0);
     background: linear-gradient(340deg, rgba(51, 0, 0, 1) 0%, rgba(98, 22, 47, 1) 100%);
@@ -270,7 +278,7 @@ li {
     height: 18rem;
 }
 .fontProducto {
-    color: rgb(130, 117, 50)
+    color: rgb(77, 74, 61)
 }
 
 /* -------------------------------------------------------------------------------- */
