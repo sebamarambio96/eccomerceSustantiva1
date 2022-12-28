@@ -14,7 +14,7 @@ fetch("../JSON/productos.json")
             while (contenedorCarro.firstChild) {
                 contenedorCarro.removeChild(contenedorCarro.firstChild);
             }
-            
+
 
             carritoGuardado.forEach(producto => {
                 /* console.log(producto) */
@@ -39,7 +39,47 @@ fetch("../JSON/productos.json")
             contenedorCarro.appendChild(fragmentCarro)
 
         }
+
+        function pintarTotal() {
+            const templateCarritoContenido = document.getElementById('templateCarritoTotal').content
+            const totalCarro = document.getElementById('totalCarro')
+            const fragmentCarro = document.createDocumentFragment()
+            let contador = JSON.parse(localStorage.getItem('contador'))
+            while (totalCarro.firstChild) {
+                totalCarro.removeChild(totalCarro.firstChild);
+            }
+
+            let cantidadTotal = templateCarritoContenido.getElementById('cantidadTotal')
+            let totalPrecio = templateCarritoContenido.getElementById('totalPrecio')
+            console.log(contador)
+            cantidadTotal.textContent = contador
+            let total = 0
+            carritoGuardado.map((producto) => {
+                console.log(producto)
+                let sumaProducto = producto.precio * producto.cantidad
+                console.log(sumaProducto)
+                total += sumaProducto
+            })
+            totalPrecio.textContent = `$ ${total}`
+
+            const clone = templateCarritoContenido.cloneNode(true)
+            fragmentCarro.appendChild(clone)
+            totalCarro.appendChild(fragmentCarro)
+
+        }
+        function vaciarCarro() {
+            const botonVaciar = document.getElementById('botonVaciar')
+            botonVaciar.addEventListener('click', () => {
+                localStorage.clear()
+                location.reload()
+            })
+        }
+
+
+
+        pintarTotal()
         pintarCarro()
+        
         //Modificar Carrito
 
         let carrito = {}
@@ -86,6 +126,8 @@ fetch("../JSON/productos.json")
                     pintarCarro()
                     detectarBotonesPlus(productos)
                     detectarBotonesMinus(productos)
+                    pintarTotal()
+                    vaciarCarro()
                 })
             })
         }
@@ -110,13 +152,17 @@ fetch("../JSON/productos.json")
                     if (carrito.hasOwnProperty(producto.id)) {
                         producto.cantidad = carrito[producto.id].cantidad - 1
                     }
+                    if (producto.cantidad <= 0) {
+                        producto.cantidad = 0
+                    }
                     carrito[producto.id] = { ...producto }
                     arrayCompras = Object.values(carrito)
+
+
                     let contadorInterno = 0
                     arrayCompras.map(producto => {
                         contadorInterno += producto.cantidad
                     })
-                    console.log(arrayCompras)
                     localStorage.setItem('compras', JSON.stringify(arrayCompras))
                     localStorage.setItem('contador', JSON.stringify(contadorInterno))
                     localStorage.setItem('carrito', JSON.stringify(carrito))
@@ -124,12 +170,16 @@ fetch("../JSON/productos.json")
                     pintarCarro()
                     detectarBotonesPlus(productos)
                     detectarBotonesMinus(productos)
+                    pintarTotal()
+                    vaciarCarro()
                 })
             })
         }
+
+
         detectarBotonesPlus(productos)
         detectarBotonesMinus(productos)
-
+        vaciarCarro()
 
     })
 

@@ -67,6 +67,9 @@
                     <tbody id="contenedorCarro">
                         <!-- Aquí se dibujara el contenido y luego el total -->
                     </tbody>
+                    <tbody id="totalCarro">
+
+                    </tbody>
                 </table>
                 <div class="d-flex bd-highlight">
                     <div class="p-2 flex-grow-1 bd-highlight"></div>
@@ -117,6 +120,13 @@
     </template>
 
     <template id="templateCarritoTotal">
+        <!-- <tr>
+            <td></td>
+            <td><b>DESCUENTO</b></td>
+            <td id="CantidadDescuento">10%</td>
+            <td></td>
+            <td></td>
+        </tr> -->
         <tr>
             <td></td>
             <td><b>TOTAL</b></td>
@@ -125,6 +135,7 @@
                         class="bi bi-trash"></i></button></td>
             <td id="totalPrecio">$$$$$</td>
         </tr>
+        
     </template>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
